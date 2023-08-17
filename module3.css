@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(74, 3, 3);
+    color: white;
+    height: 70px;
+    margin-top: 0;
+}
+
+.humbergerMenu{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
+    margin-right: 5px;
+}
+
+h1{
+    margin: 0;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0 10px;
+    align-content: center;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+.lines{
+    display: none;
+}
+/* queries here */
+@media (max-width: 608px){
+       .lines{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+       }
+       .bar{
+        background-color: aliceblue;
+       }
+}
+
+
+
